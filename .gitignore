@@ -1,0 +1,4 @@
+local-ops-automation-kit-v*.zip
+*.key
+*.pem
+.env

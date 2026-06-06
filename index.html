@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Production-minded n8n workflows for agencies serving local businesses.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Local Ops Automation Kit for n8n">
+  <meta property="og:description" content="Three production-minded n8n starters with fixtures, guardrails, and agency-ready documentation.">
+  <meta property="og:image" content="og-card.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Local Ops Automation Kit for n8n</title>
+  <style>
+    :root { --ink:#14201c; --paper:#f3f0e7; --green:#123c31; --lime:#d9ff57; --muted:#617069; --line:rgba(20,32,28,.16); }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:var(--paper); font-family:Inter,system-ui,sans-serif; }
+    a { color:inherit; } .wrap { width:min(1120px,calc(100% - 40px)); margin:auto; }
+    header { display:flex; justify-content:space-between; padding:24px 0; font-weight:800; }
+    .tag { font-size:12px; letter-spacing:.13em; font-weight:850; color:#476158; }
+    .hero { display:grid; grid-template-columns:1.2fr .8fr; gap:64px; align-items:center; padding:90px 0 110px; }
+    h1,h2 { font-family:Georgia,serif; font-weight:500; letter-spacing:-.045em; line-height:.98; }
+    h1 { margin:16px 0 24px; font-size:clamp(52px,7vw,88px); } h2 { font-size:clamp(38px,5vw,58px); }
+    .lead { max-width:720px; color:#415149; font-size:20px; line-height:1.6; }
+    .button { display:inline-block; margin-top:22px; padding:15px 22px; border-radius:4px; color:white; background:var(--green); font-weight:800; text-decoration:none; }
+    .button.disabled { opacity:.55; cursor:not-allowed; }
+    .product-box { padding:28px; border:1px solid var(--line); border-radius:16px; background:white; box-shadow:0 28px 70px rgba(34,50,43,.12); }
+    .file { display:flex; justify-content:space-between; margin:12px 0; padding:13px; border-radius:7px; background:#edf0ee; font:13px ui-monospace,monospace; }
+    .strip { padding:30px 0; background:var(--lime); text-align:center; font-size:18px; }
+    section { padding:100px 0; } .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { padding:28px; border:1px solid var(--line); background:rgba(255,255,255,.38); }
+    .card p, .muted { color:var(--muted); line-height:1.65; }
+    .price-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .price { padding:30px; border:1px solid var(--line); background:white; }
+    .price.featured { color:white; background:var(--green); } .price.featured .muted { color:#bad0c7; }
+    .buy { display:inline-block; margin-top:12px; padding:11px 15px; border:1px solid currentColor; border-radius:4px; font-weight:800; text-decoration:none; }
+    .buy.pending { opacity:.55; pointer-events:none; }
+    .amount { margin:16px 0 6px; font:48px Georgia,serif; }
+    .faq { max-width:820px; } details { padding:20px 0; border-bottom:1px solid var(--line); } summary { font-weight:800; cursor:pointer; }
+    footer { padding:34px 0; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    @media(max-width:760px){.hero,.grid,.price-grid{grid-template-columns:1fr}.hero{padding-top:55px}}
+  </style>
+</head>
+<body>
+  <header class="wrap"><span>LOCAL OPS KIT</span><span>n8n workflows for agencies</span></header>
+  <main>
+    <div class="wrap hero">
+      <div>
+        <p class="tag">REUSABLE AUTOMATION ASSETS</p>
+        <h1>Ship the follow-up workflows clients keep asking for.</h1>
+        <p class="lead">Three production-minded n8n starters for quote follow-up, review requests, and no-show recovery, with fixtures, guardrails, launch checks, and agency-ready documentation.</p>
+        <a class="button" href="downloads/local-ops-free-no-show-workflow.zip" download>Download the free workflow</a>
+        <p><a href="#pricing">View paid license options →</a></p>
+        <p class="muted">No subscription. Customer-owned accounts. No revenue guarantees.</p>
+      </div>
+      <aside class="product-box">
+        <p class="tag">VERSION 1.0</p>
+        <div class="file"><span>quote-follow-up.json</span><span>✓</span></div>
+        <div class="file"><span>review-request.json</span><span>✓</span></div>
+        <div class="file"><span>no-show-recovery.json</span><span>✓</span></div>
+        <div class="file"><span>test-fixtures/</span><span>3</span></div>
+        <div class="file"><span>docs/</span><span>3</span></div>
+        <div class="file"><span>LICENSE.md</span><span>✓</span></div>
+      </aside>
+    </div>
+    <div class="strip"><strong>Built to customize.</strong> Inactive by default, explicit configuration points, customer-owned credentials.</div>
+
+    <section class="wrap" id="pricing">
+      <p class="tag">WHAT IS INSIDE</p>
+      <h2>Less blank canvas. More reliable first deployment.</h2>
+      <div class="grid">
+        <article class="card"><h3>Quote Follow-up</h3><p>Schedules an approved follow-up, blocks closed or opted-out records, and passes an idempotency key to your provider.</p></article>
+        <article class="card"><h3>Review Request</h3><p>Waits after job completion, requests an honest review, and keeps a private support path open without review gating.</p></article>
+        <article class="card"><h3>No-show Recovery</h3><p>Offers a rescheduling route after a missed appointment while preserving a human reply path.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <p class="tag">LICENSE OPTIONS</p>
+      <h2>Use it once, or make it part of your agency stack.</h2>
+      <div class="price-grid">
+        <article class="price"><h3>Launch</h3><p class="amount">$99</p><p class="muted">Introductory price for one business deployment.</p><a class="buy pending" data-checkout="launch" href="#">Checkout pending</a></article>
+        <article class="price featured"><h3>Standard</h3><p class="amount">$149</p><p class="muted">Regular price for one business deployment, including product updates for one year.</p><a class="buy pending" data-checkout="standard" href="#">Checkout pending</a></article>
+        <article class="price"><h3>Agency</h3><p class="amount">$299</p><p class="muted">Deploy modified copies for up to 25 end clients.</p><a class="buy pending" data-checkout="agency" href="#">Checkout pending</a></article>
+      </div>
+    </section>
+
+    <section class="wrap faq">
+      <p class="tag">PLAIN ANSWERS</p>
+      <h2>Before you import.</h2>
+      <details><summary>Is this one-click?</summary><p class="muted">No. You must connect real customer systems, approve messages, set timezone and consent rules, and run the included fixtures.</p></details>
+      <details><summary>Does it include n8n hosting?</summary><p class="muted">No. The customer or agency owns the n8n instance and provider accounts.</p></details>
+      <details><summary>Will it guarantee more revenue or reviews?</summary><p class="muted">No. It provides reusable implementation assets. Outcomes depend on the offer, audience, data, deliverability, and operation.</p></details>
+      <details><summary>Can I resell it?</summary><p class="muted">The Agency License allows client deployments, not resale or redistribution of the source bundle.</p></details>
+    </section>
+  </main>
+  <footer><div class="wrap">Local Ops Automation Kit · Digital workflow assets for n8n implementers <span id="support"></span></div></footer>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Local Ops Automation Kit for n8n",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "n8n",
+    "description": "Reusable quote follow-up, review request, and no-show recovery workflow templates for n8n.",
+    "offers": [
+      {"@type":"Offer","name":"Launch","price":"99","priceCurrency":"USD"},
+      {"@type":"Offer","name":"Standard","price":"149","priceCurrency":"USD"},
+      {"@type":"Offer","name":"Agency","price":"299","priceCurrency":"USD"}
+    ]
+  }
+  </script>
+  <script src="store-config.js"></script>
+  <script>
+    const store = window.LOCAL_OPS_STORE || {};
+    const checkoutMap = {
+      launch: store.launchCheckoutUrl,
+      standard: store.standardCheckoutUrl,
+      agency: store.agencyCheckoutUrl
+    };
+    document.querySelectorAll("[data-checkout]").forEach((link) => {
+      const url = checkoutMap[link.dataset.checkout];
+      if (url) {
+        link.href = url;
+        link.textContent = "Buy now";
+        link.classList.remove("pending");
+      }
+    });
+    if (store.supportEmail) {
+      const support = document.querySelector("#support");
+      const link = document.createElement("a");
+      link.href = `mailto:${store.supportEmail}`;
+      link.textContent = ` · Support: ${store.supportEmail}`;
+      support.appendChild(link);
+    }
+    if (store.analyticsDomain) {
+      const script = document.createElement("script");
+      script.defer = true;
+      script.dataset.domain = store.analyticsDomain;
+      script.src = "https://plausible.io/js/script.js";
+      document.head.appendChild(script);
+    }
+  </script>
+</body>
+</html>
