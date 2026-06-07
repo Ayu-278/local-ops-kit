@@ -7,6 +7,7 @@ Production-minded n8n workflow starters for agencies and freelancers serving loc
 - [Download the free no-show recovery workflow](https://ayu-278.github.io/local-ops-kit/free-n8n-no-show-recovery.html)
 - [Read the quote follow-up architecture guide](https://ayu-278.github.io/local-ops-kit/n8n-quote-follow-up-automation.html)
 - [Read the neutral review-request guide](https://ayu-278.github.io/local-ops-kit/n8n-review-request-workflow.html)
+- [Review the selective partner program](https://ayu-278.github.io/local-ops-kit/partners.html)
 - [View the complete kit and licenses](https://localopskit.gumroad.com/l/local-ops-n8n-kit?utm_source=github&utm_medium=repository&utm_campaign=local_ops_launch)
 
 ## What the Paid Kit Includes

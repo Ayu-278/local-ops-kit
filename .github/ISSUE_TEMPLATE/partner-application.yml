@@ -1,0 +1,51 @@
+name: Partner application
+description: Apply to promote Local Ops Kit through an approved public channel.
+title: "[Partner application] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in the Local Ops Kit partner program.
+
+        This issue is public. Do not include an email address, legal name, payment details, account credentials, or other sensitive information.
+  - type: input
+    id: public_channel
+    attributes:
+      label: Public channel or website
+      description: Link to the public channel where you publish n8n or automation content.
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience and topic fit
+      description: Briefly describe your audience and the n8n or local-business topics you cover.
+    validations:
+      required: true
+  - type: textarea
+    id: promotion
+    attributes:
+      label: Intended promotion
+      description: Explain the content or placement you would use. Mass messaging and unsolicited promotion are not accepted.
+    validations:
+      required: true
+  - type: input
+    id: public_contact
+    attributes:
+      label: Public contact handle
+      description: A public profile or handle where we can identify you. Do not enter a private email address.
+      placeholder: "@handle or public profile URL"
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Program rules
+      options:
+        - label: I will disclose the affiliate relationship where required.
+          required: true
+        - label: I will not make revenue, compliance, delivery, or review guarantees.
+          required: true
+        - label: I will not use spam, fake reviews, self-referrals, or redistribute source files.
+          required: true
