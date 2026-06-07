@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a safer n8n quote follow-up workflow with current-state checks, opt-out handling, and duplicate-send protection.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ayu-278.github.io/local-ops-kit/n8n-quote-follow-up-automation.html">
+  <title>n8n Quote Follow-up Automation with Status Checks</title>
+  <style>
+    body{margin:0;color:#14201c;background:#f3f0e7;font-family:Inter,system-ui,sans-serif}main{max-width:850px;margin:auto;padding:80px 24px}h1{margin:16px 0 28px;font:500 clamp(44px,7vw,74px)/1 Georgia,serif;letter-spacing:-.045em}h2{margin-top:48px;font:500 34px Georgia,serif}p,li{color:#4f5f58;font-size:18px;line-height:1.7}.tag{font-size:12px;font-weight:850;letter-spacing:.13em}.box{margin:36px 0;padding:26px;border:1px solid rgba(20,32,28,.16);background:white}.button{display:inline-block;margin:18px 0;padding:15px 22px;border-radius:4px;color:white;background:#123c31;font-weight:800;text-decoration:none}a{color:inherit}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="tag">N8N IMPLEMENTATION GUIDE</p>
+    <h1>Quote follow-up automation needs one last state check.</h1>
+    <p>A delayed reminder looks simple: receive a quote, wait two days, and send a message. The risky part is everything that can change during those two days.</p>
+    <div class="box">
+      <strong>Stop the workflow when the quote is:</strong>
+      <ul><li>accepted or declined</li><li>closed or replaced</li><li>answered by the customer</li><li>associated with an opted-out contact</li></ul>
+    </div>
+    <h2>A safer n8n architecture</h2>
+    <ol>
+      <li>Receive and validate the quote-created event.</li>
+      <li>Acknowledge the webhook immediately.</li>
+      <li>Wait for the approved delay.</li>
+      <li>Fetch the current quote and contact status from the CRM.</li>
+      <li>Stop for accepted, declined, closed, replied, or opted-out records.</li>
+      <li>Send through an authenticated provider with duplicate suppression.</li>
+      <li>Log the action and notify staff on failure.</li>
+    </ol>
+    <h2>What a reusable template cannot guess</h2>
+    <p>A generic workflow cannot know a customer's CRM API, status vocabulary, consent model, or messaging provider. Responsible automation marks those integration points clearly instead of claiming a one-click production install.</p>
+    <a class="button" href="https://localopskit.gumroad.com/l/local-ops-n8n-kit?utm_source=github_pages&amp;utm_medium=guide&amp;utm_campaign=local_ops_launch&amp;utm_content=quote_guide">See the complete workflow kit</a>
+    <p><a href="index.html">&larr; Back to Local Ops Kit</a></p>
+  </main>
+</body>
+</html>
