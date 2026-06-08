@@ -1,0 +1,68 @@
+name: Implementation fit check
+description: Request a public, non-sensitive fit check for a Local Ops Kit implementation sprint.
+title: "[Implementation fit check] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in a Local Ops Kit implementation sprint.
+
+        This issue is public. Do not include passwords, API keys, private customer data, legal names, payment details, home addresses, private email addresses, or confidential business information.
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Workflow needed
+      description: Choose the main workflow you want implemented first.
+      options:
+        - Quote follow-up
+        - Review request
+        - No-show recovery
+        - Not sure yet
+    validations:
+      required: true
+  - type: input
+    id: business_type
+    attributes:
+      label: Business or client type
+      description: Use a broad category only, for example home services, clinic, agency, salon, fitness studio, or B2B sales team.
+      placeholder: Home services agency
+    validations:
+      required: true
+  - type: textarea
+    id: current_stack
+    attributes:
+      label: Current tools
+      description: List public tool names only. Do not include account IDs, private URLs, credentials, customer names, or private data.
+      placeholder: n8n Cloud, Google Sheets, Gmail, HubSpot, Twilio, Calendly
+    validations:
+      required: true
+  - type: textarea
+    id: trigger_and_outcome
+    attributes:
+      label: Trigger and desired outcome
+      description: Explain the event that should start the workflow and the action it should take.
+      placeholder: When a missed appointment is logged, wait 30 minutes, send one approved reschedule message, and alert the owner if there is no reply.
+    validations:
+      required: true
+  - type: dropdown
+    id: timeline
+    attributes:
+      label: Desired timeline
+      options:
+        - This week
+        - 2 weeks
+        - This month
+        - Exploratory only
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Safety boundaries
+      options:
+        - label: I will not share passwords, API keys, payment details, or private customer data in this public issue.
+          required: true
+        - label: I understand this is implementation help, not legal, privacy, deliverability, medical, tax, or compliance advice.
+          required: true
+        - label: I understand bulk unsolicited messaging, review gating, fake reviews, and spam workflows are not accepted.
+          required: true
